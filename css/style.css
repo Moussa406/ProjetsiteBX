@@ -198,3 +198,27 @@ main article ul li {
     /* Cache le texte excédentaire */
     text-overflow: ellipsis;
 }
+/* Mise en page du tableau sur la page concert */
+table {
+    width: 80% ;
+    overflow: hidden; 
+}
+
+th, td {
+    border: 1px solid #020102;
+    padding: 8px;
+}
+
+th {
+    background-color: #ffd6ba;
+    text-align: left;
+}
+
+.titre th {
+    text-align: center;
+}
+
+#concert div {
+    display: flex;
+    justify-content: center;
+}
