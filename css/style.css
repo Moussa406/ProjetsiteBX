@@ -13,8 +13,6 @@ a {
     color: black;
 }
 
-
-
 body {
     background-color: #ffd6ba;
 }
@@ -221,4 +219,43 @@ th {
 #concert div {
     display: flex;
     justify-content: center;
+}
+/* CSS pr la page info */
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 5px; /* Espace entre les blocs */
+}
+
+.bloc {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.grid-item {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+h2 {
+    text-align: center; 
+}
+
+/*Gere le titre de page*/
+.titre {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+    height: 5vh; /* hauteur du conteneur */
+}
+
+.sstitre {
+    display: flex;
+    justify-content: center; 
 }
