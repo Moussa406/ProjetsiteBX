@@ -7,25 +7,55 @@
     </head>
     <body>
         <header>
-            <div>
-                <img src="img/blason.png" alt="armoiries de la ville">
-                <h1>Ville de Bordeaux</h1>
+            <div class="navigation">
+              <input type="checkbox" id="btnNavBar" />
+              <nav>
+                <a href="#" class="logo"
+                  ><img src="img/blason.png" alt="armoiries de la ville"
+                /></a>
+                <div class="divTitre">
+                  <h6>Ville de Bordeaux</h6>
+                </div>
+      
+                <label for="btnNavBar" class="menu-toggle">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </label>
+      
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Bienvenue</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="lieu.html" class="nav-link">Lieux remarquables</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="cinema.html" class="nav-link">Cinémas</a>
+                  </li>
+                  <li class="nav-item actif">
+                    <a href="info.html" class="nav-link">Infos pratiques</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="concert.html" class="nav-link">Concerts</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="search-box">
+                      <input type="text" />
+                    </div>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <br>
-            <div class="devise">
-                <span>Lilia sola regunt lunam unda castra leonem</span>
-                <span>Les lys règnent seuls sur la lune, les ondes, la forteresse et le lion</span>
+      
+            <div class="image-container">
+              <img src="img/back.png" alt="Place de la bourse" />
+              <div class="titre">
+                <h1>Que visiter à Bordeaux</h1>
+              </div>
             </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Bienvenue</a></li>
-                        <li><a href="lieu.html">Lieux remarquable</a></li>
-                        <li><a href="cinema.html">Cinéma</a></li>
-                        <li class="actif">Infos pratiques</li>
-                        <li><a href="concert.html">Concert</a></li>
-                    </ul>
-                </nav>
-        </header>
+          </header>
+      
     <main>
         <article>
             <div class="titre">
