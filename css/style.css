@@ -592,10 +592,6 @@ header .image-container img{
   border-radius: 20%;
 }
 
-#info ul {
-  list-style-type: none;
-}
-
 #info h2 {
   text-align: center; 
 }
@@ -728,4 +724,29 @@ text-align: center; /* Centre le texte dans la bulle */
   width: 100%; /* Ajuste la largeur de l'image à la largeur du conteneur */
   max-width: 500px; /* Optionnel, fixe une largeur maximale pour l'image */
   margin-bottom: 20px; /* Ajoute un espacement sous l'image */
+}
+
+/* Mise en page du tableau sur la page concert */
+#concert table {
+  width: 80% ;
+  overflow: hidden; 
+}
+
+#concert th, td {
+  border: 1px solid #020102;
+  padding: 8px;
+}
+
+#concert th {
+  background-color: #ffd6ba;
+  text-align: left;	
+}
+
+#concert .titre th {
+  text-align: center;
+}
+
+#concert div {
+  display: flex;
+  justify-content: center;
 }
