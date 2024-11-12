@@ -569,6 +569,100 @@ header .image-container img{
 #welcome .paragraphe{
   width: 470px;
 }
+/* Mediaquierry, responsive
 @media(max-width: {
-  
+} */
+
+/* CSS pr la page info */
+#info .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 5px; /* Espace entre les blocs */
+}
+
+#info .bloc {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#info .grid-item {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+#info ul {
+  list-style-type: none;
+}
+
+#info h2 {
+  text-align: center; 
+}
+
+
+/*Gere le titre de page infos*/
+#info .titre {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 5vh; 
+}
+
+#info .sstitre {
+  display: flex;
+  justify-content: center; 
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  font-style: italic;
+}
+
+footer .sources,
+.promo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer .sources li,
+.promo li {
+  margin: 0 10px;
+
+}
+
+footer .promo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none; 
+}
+
+footer .logo-large {
+  width: 50px; 
+}
+
+footer .promo li {
+  display: flex; 
+  align-items: center; 
+}
+
+footer img.logo-footer { 
+height: 100px;
 }
