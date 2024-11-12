@@ -544,18 +544,15 @@ header .image-container img{
   justify-content: space-between;
   margin: 30px;
   /* text-align: center; */
-
 }
 
 #welcome img {
   height: 200px;
   border-radius: 20px;
-  width: 65%;
-  
-  
+  width: 65%; 
 }
-#welcome .liste{
 
+#welcome .liste {
   width: 65%;
   text-align: center;
   background-color: rgb(250, 235, 215);
@@ -566,7 +563,7 @@ header .image-container img{
   opacity: 0.7;
   
 }
-#welcome .paragraphe{
+#welcome .paragraphe {
   width: 470px;
 }
 /* Mediaquierry, responsive
@@ -726,27 +723,81 @@ text-align: center; /* Centre le texte dans la bulle */
   margin-bottom: 20px; /* Ajoute un espacement sous l'image */
 }
 
+/* --------- PAGE CONCERT -------------------- */
 /* Mise en page du tableau sur la page concert */
 #concert table {
-  width: 80% ;
-  overflow: hidden; 
+  width: auto;
+  overflow: hidden;
+  border-spacing: 10px;
 }
 
 #concert th, td {
-  border: 1px solid #020102;
-  padding: 8px;
+  border: 5px solid transparent;
+  padding: 10px;
 }
 
 #concert th {
-  background-color: #ffd6ba;
+  background-color: #ebb973;
   text-align: left;	
 }
 
-#concert .titre th {
+#concert td {
+  background-color: #ecc997;
+  text-align: left;	
+}
+
+#concert .tableautitre th {
   text-align: center;
 }
 
-#concert div {
+/* Mise en place du contenu */
+#concert .titre {
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  align-items: center; 
+  height: 10vh; 
+    color: black;
+    text-shadow: 
+        1px 1px 5px rgba(255, 0, 0, 0.7),
+        -1px -1px 5px rgba(0, 0, 255, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#concert .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; 
+  gap: 5px; /* Espace entre les blocs */
+}
+
+#concert .bloc {
+  padding: 10px;
+  border: 0px;
+}
+
+#concert .grid-item {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: justify;
+  width: 90%; 
+  height: auto;
+  border-radius: 10%;
+}
+
+/* Bouton audio */
+#concert .audio {
+  text-align: center; 
+}
+
+#concert ul {
+list-style-type : none;
+}
+
+/* image dans le tableau */
+#concert .image-container {
+ width: 40%; 
+ height: 30px;
 }
