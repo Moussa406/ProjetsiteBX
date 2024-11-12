@@ -537,4 +537,38 @@ header .image-container img{
     }
   }
 
+/* Main page Bienvenue */
+   
+#welcome .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  /* text-align: center; */
 
+}
+
+#welcome img {
+  height: 200px;
+  border-radius: 20px;
+  width: 65%;
+  
+  
+}
+#welcome .liste{
+
+  width: 65%;
+  text-align: center;
+  background-color: rgb(250, 235, 215);
+  border-radius: 20px;
+  padding: 25px;
+  margin-left: 75px;
+  margin-top: -20px;
+  opacity: 0.7;
+  
+}
+#welcome .paragraphe{
+  width: 470px;
+}
+@media(max-width: {
+  
+}
