@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Feuille de style commmune */
+/* Feuille de style commune */
 body {
     margin: 0;
     padding: 0;
@@ -544,18 +544,15 @@ header .image-container img{
   justify-content: space-between;
   margin: 30px;
   /* text-align: center; */
-
 }
 
 #welcome img {
   height: 200px;
   border-radius: 20px;
-  width: 65%;
-  
-  
+  width: 65%; 
 }
-#welcome .liste{
 
+#welcome .liste {
   width: 65%;
   text-align: center;
   background-color: rgb(250, 235, 215);
@@ -566,7 +563,7 @@ header .image-container img{
   opacity: 0.7;
   
 }
-#welcome .paragraphe{
+#welcome .paragraphe {
   width: 470px;
 }
 /* Mediaquierry, responsive
@@ -578,6 +575,7 @@ header .image-container img{
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
   gap: 5px; /* Espace entre les blocs */
+  padding: 20px;
 }
 
 #info .bloc {
@@ -610,7 +608,7 @@ header .image-container img{
   justify-content: center; 
 }
 
-/* Footer */
+/* ------ Footer-------- */
 footer {
   background-color: #000;
   color: #fff;
@@ -742,29 +740,179 @@ width: 600px; /* Largeur de la bulle */
 }
 
 
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
+/* --------- PAGE CONCERT -------------------- */
 /* Mise en page du tableau sur la page concert */
 #concert table {
-  width: 80% ;
-  overflow: hidden; 
+  width: 100%;
+  overflow: hidden;
+  border-spacing: 10px;
+  table-layout: auto;
 }
 
 #concert th, td {
-  border: 1px solid #020102;
-  padding: 8px;
+  border: 5px solid transparent;
+  padding: 10px;
 }
 
 #concert th {
-  background-color: #ffd6ba;
+  background-color: #ebb973;
   text-align: left;	
 }
 
-#concert .titre th {
+#concert td {
+  background-color: #ecc997;
+  text-align: left;	
+}
+
+#concert .tableautitre th {
   text-align: center;
 }
 
-#concert div {
+/* Mise en place du contenu */
+#concert .titre {
+  font-size : 1.5rem;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  align-items: center; 
+  height: 10vh; 
+    color: black;
+    text-shadow: 
+        1px 1px 5px rgba(255, 0, 0, 0.7),
+        -1px -1px 5px rgba(0, 0, 255, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+#concert .titre2 {
+  font-size : 1.1rem;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 10vh; 
+  width: 90spx;
+    color: black;
+    text-shadow: 
+        1px 1px 5px rgba(255, 0, 0, 0.7),
+        -1px -1px 5px rgba(0, 0, 255, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+h2 span {
+  text-decoration : underline;
+}
+
+#concert .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; 
+  gap: 5px; /* Espace entre les blocs */
+}
+
+#concert .bloc {
+  padding: 10px;
+  border: 0px;
+}
+
+#concert .grid-item {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: justify;
+  width: 90%; 
+  height: auto;
+  border-radius: 10%;
+}
+
+/* Bouton audio */
+#concert .audio {
+  text-align: center; 
+}
+
+#concert ul {
+list-style-type : none;
+}
+
+#concert li {
+  text-align: center;
+}
+
+#concert .soustitre {
+  text-align: center;
+}
+
+/* Responsive de la page infopratique */
+#info img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+ #info .container {
+      grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+ #info .container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+ #info .container {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive de la page concert */
+#concert img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+ #concert .container {
+      grid-template-columns: repeat(2fr 1fr 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+ #concert .container {
+      grid-template-columns: repeat(1fr 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+ #concert .container {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  #concert .responsivetxt {
+      font-size: 1rem; /* Taille de police pour les écrans moyens */
+  }
+}
+
+@media (max-width: 768px) {
+  #concert .responsivetxt {
+      font-size: 0.8rem; /* Taille de police pour les petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  #concert .responsivetxt {
+      font-size: 1rem; /* Taille de police pour les très petits écrans */
+  }
+}
+
+@media (max-width: 768px) {
+  #concert .titre2 {
+      max-width: 300px; /* Réduit la largeur pour forcer un retour à la ligne */
+      display: inline;
+    }
 }
