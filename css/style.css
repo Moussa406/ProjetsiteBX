@@ -766,6 +766,27 @@ text-align: center; /* Centre le texte dans la bulle */
         0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+
+#concert .titre2 {
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 10vh; 
+  width: 90spx;
+    color: black;
+    text-shadow: 
+        1px 1px 5px rgba(255, 0, 0, 0.7),
+        -1px -1px 5px rgba(0, 0, 255, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+h2 span {
+  text-decoration : underline;
+}
+
 #concert .container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr; 
@@ -796,8 +817,10 @@ text-align: center; /* Centre le texte dans la bulle */
 list-style-type : none;
 }
 
-/* image dans le tableau */
-#concert .image-container {
- width: 40%; 
- height: 30px;
+#concert li {
+  text-align: center;
+}
+
+#concert .soustitre {
+  text-align: center;
 }
