@@ -575,6 +575,7 @@ header .image-container img{
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
   gap: 5px; /* Espace entre les blocs */
+  padding: 20px;
 }
 
 #info .bloc {
@@ -823,4 +824,32 @@ list-style-type : none;
 
 #concert .soustitre {
   text-align: center;
+}
+
+/* Responsive de la page infopratique */
+#info img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mise en page sur les grands écrans */
+@media (min-width: 1200px) {
+ #info .container {
+      grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Mise en page sur les écrans moyens */
+@media (min-width: 768px) and (max-width: 1199px) {
+ #info .container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mise en page sur les petits écrans */
+@media (max-width: 767px) {
+ #info .container {
+      grid-template-columns: 1fr;
+  }
 }
