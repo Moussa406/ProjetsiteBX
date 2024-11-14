@@ -791,8 +791,8 @@ height: 100px;
 
 /* modification des images  sur le conteneur principal */
 #cinema1 img {                               
-  height: 500px; 
-  width: 700px;
+  /*height: 500px; 
+  width: 700px;*/
   border-radius:15px;
   margin: 15px; /* Ajoute un espace de 10px autour de chaque image */
  }
@@ -804,6 +804,7 @@ height: 100px;
   transition: background-color 0.3s, color 0.3s;
   background-color: #f0f0f0; /* Change le fond au survol */
   text-align: center; /* Centre le texte dans la bulle */
+  padding : 40px;
 }
 
 /* Modifie la première liste de la page */
@@ -813,6 +814,10 @@ height: 100px;
 
 /* Modifie la partie principala de la page */
 #cinema2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ justify-content: center;
   font-weight: bold; /* Met le texte en gras */
 }
 
@@ -833,6 +838,7 @@ background-color:rgb(233, 227, 216);
  list-style-type: none; /* Supprime les puces */
  width: 600px; /* Largeur de la bulle */
  text-align: center; /* Centre le texte dans la bulle */
+
 }
 
 /* Modifie le visuel de la derniere liste de la page */
@@ -844,7 +850,7 @@ background-color:rgb(233, 227, 216);
 /* Modifie la première partie de ma pageclcl */
 #cinema-haut {
 background-color:rgb(233, 227, 216);
-border-radius: 25px ;
+border-radius: 25px;
  height: 100%;
  width: 50%;   
  justify-content: center; /* Centre horizontalement */
@@ -863,9 +869,44 @@ width: 600px; /* Largeur de la bulle */
   width: 100%; /* Ajuste la largeur de l'image à la largeur du conteneur */
   max-width: 500px; /* Optionnel, fixe une largeur maximale pour l'image */
   margin-bottom: 20px; /* Ajoute un espacement sous l'image */
+  }
+
+  
+.liste-principale-cinema{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+}
+.contenu-liste-cinema { 
+ width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  background-color:rgb(233, 227, 216);
+  padding: 20px;
+    border-radius: 25px;
 }
 
 
+.contenu-liste-cinema img{
+  margin-right: 10px;
+  width: 50%;
+
+}
+@media(max-width:690px) {
+  .contenu-liste-cinema a{
+   font-size: 15px;
+  }
+}
+.detail-film {
+  list-style-type: none; /* Retirer les puces */
+  padding: 0; /* Enlever l'indentation par défaut (facultatif) */
+}
+.detail-film li {
+  
+  font-weight: normal
+}
 /* --------- PAGE CONCERT -------------------- */
 /* Mise en page du tableau sur la page concert */
 #concert table {
