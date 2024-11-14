@@ -2,110 +2,204 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Ville de Bordeaux</title>
+        <title>City of Bordeaux</title>
         <link rel="stylesheet" media="screen" href="css/style.css" type="text/css">
     </head>
     <body>
         <header>
-            <div>
-                <img src="img/blason.png" alt="armoiries de la ville">
-                <h1>Ville de Bordeaux</h1>
+            <div class="navigation">
+              <input type="checkbox" id="btnNavBar">
+              <nav>
+                <a href="#" class="logo"
+                  ><img src="img/blason.png" alt="armoiries de la ville">
+                </a>
+                <div class="divTitre">
+                  <h6>Ville de Bordeaux</h6>
+                </div>
+                <label for="btnNavBar" class="menu-toggle">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </label>
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Bienvenue</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="lieu.html" class="nav-link">Lieux remarquables</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="cinema.html" class="nav-link">Cinémas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="info.html" class="nav-link">Infos pratiques</a>
+                  </li>
+                  <li class="nav-item actif">
+                    <a href="concert.html" class="nav-link">Concerts</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="search-box">
+                      <input type="text">
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              </div>
+            <div class="image-container">
+              <img src="img/back.png" alt="Place de la bourse">
+              <div class="titre">
+                <h1>Que visiter à Bordeaux</h1>
+              </div>
             </div>
-            <br>
-            <div class="devise">
-                <span>Lilia sola regunt lunam unda castra leonem</span>
-                <span>Les lys règnent seuls sur la lune, les ondes, la forteresse et le lion</span>
+            <nav>
+                <a href="concerten.html">English</a> <img src="img/england-flag.webp" alt="English Flag">
+                <a href="concert.html">Français</a> <img src="img/french-flag-1053711_1280.webp" alt="French Flag">
+            </nav>
+          </header>
+          <main id="concert">
+            <div class="titre responsivetxt">
+            <h2>Here is a list of upcoming concerts in Bordeaux for November 2024:</h2>
             </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Bienvenue</a></li>
-                        <li><a href="lieu.html">Lieux remarquable</a></li>
-                        <li><a href="cinema.html">Cinéma</a></li>
-                        <li><a href="info.html">Info pratiques</a></li>
-                        <li class="actif">Concert</li>
-                    </ul>
-                </nav>
-                <nav>
-                <a href="concerten.html">English</a> 
-                <a href="concert.html">Français</a>
-                </nav>
-        </header>
-<main id="concert">
-<article>
-    <h2>Here is a list of upcoming concerts in Bordeaux for November 2024:</h2>
-    <img src="img/concertbx.jpg" alt="Concerts">
-    <audio controls src="sons/relaxing-piano-music-255028.mp3"></audio>
-    <div>
-        <table>
-            <thead>
-                <tr class="titre">
-                    <th>Group Name</th>
-                    <th>Date</th>
-                    <th>Places</th>
-                    <th>Price of a place</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Isulia Festival</td>
-                        <td>8 novembre</td> 
-                        <td>Arkéa Arena, 48-50 Avenue Jean Alfonséa, 33270 Floirac</td>
-                        <td>23€/personne</td> 
-                    </tr>
-                    <tr>
-                        <td>SCH</td>
-                        <td>18 novembre</td>
-                        <td>Arkéa Arena, 48-50 Avenue Jean Alfonséa, 33270 Floirac</td>
-                        <td>32€/personne</td> 
-                    </tr>
-                    <tr>
-                        <td>Shaka Ponk</td>
-                        <td>20 novembre</td>
-                        <td>Arkéa Arena, 48-50 Avenue Jean Alfonséa, 33270 Floirac</td>
-                        <td>18€/personne</td> 
-                    </tr>
-                    <tr>
-                        <td>The Rabeats</td>
-                        <td>23 novembre</td>
-                        <td>Arkéa Arena, 48-50 Avenue Jean Alfonséa, 33270 Floirac</td>
-                        <td>27€/personne</td> 
-                    </tr>
-                </tbody>
-            </table> 
-        </div>
-    </article>
-    <article>
-        <h2>Concert dans la ville</h2>
-        <img src="img/concertville.jpg" alt="Concerts dans la ville">
-        <audio controls src="sons/royalty-free-splint-hard-808-rap-beat-quotflutequot-223009.mp3"></audio>
-        <ul>
-            <li>Hymne à la joie</li>
-            <li>Le concert sera retransmis en direct dans plus de 10 lieux à Bordeaux, dans 70 lieux de la région Nouvelle-Aquitaine et en direct <br>
-                de Los Angeles et Munich à l'occasion de l'anniversaire de leur jumelage avec la ville de Bordeaux.</li>
-        </ul>
-    </article>
-    <article>
-        <h2>L'Opéra National de Bordeaux propose une saison riche et variée en 2024-2025. Voici un aperçu des spectacles programmés en novembre :</h2>
-        <img src="img/operabx.jpg" alt="Opéra">
-        <audio controls src="sons/urbains-aria-les-hugeunot-meyerbeer-anneliese-von-koenig-mezzo-126612.mp3"></audio>
-        <ul>
-            <li>"Il Cappello di paglia di Firenze" - Cet opéra comique de Nino Rota, célèbre pour ses musiques de film, sera interprété du 7 au 9 novembre.</li>
-            <li>"Così fan tutte" - L'un des opéras célèbres de Mozart, sera mis en scène du 19 au 26 novembre.</li>
-            <li>Concerts de l'Orchestre National Bordeaux Aquitaine - Plusieurs concerts sont aussi programmés tout au long du mois, avec des œuvres symphoniques et de musique classique.</li>
-            <li>Spectacles de ballet et récitals - D’autres événements incluent des spectacles de danse et des récitals de musiciens invités.</li>
-        </ul>
-    </article>
-    <h2>Pour plus de détails et pour réserver vos billets, vous pouvez consulter les sites d'événements comme l'Arkéa Arena ou le site officiel de Bordeaux Tourisme.</h2> <!--mettre des liens sur les sites cité ou pas ? -->
-</main>
-<footer>
-    Les différentes sources : <br>
-    source: ChatGPT.com 
-    source: Site de la ville de Bordeaux
-    source : pixabay.com <br>
-    Les liens pratiques :  <br>
-    <a href="https://www.bordeaux.fr/" target="_blank">Mairie de la ville de Bordeaux</a> <br>
-    Promotion TPRECO 2024 : <br>
-    <a href="https://www.linkedin.com/in/jennabenufferamia/" target="_blank">Jenna</a>, <img src="img/linkedin-logo.webp" alt="Linkedin" class="logo-in">, <a href="https://www.linkedin.com/in/alexandre-fourquin-5ba470187/" target="_blank">Alexandre</a> <img src="img/linkedin-logo.webp" alt="Linkedin" class="logo-in">, <a href="https://www.linkedin.com/in/moussa-kebe-b36ba9226/" target="_blank">Moussa</a> <img src="img/linkedin-logo.webp" alt="Linkedin" class="logo-in"> ,<a href="https://www.linkedin.com/in/s%C3%A9bastien-drillaud-b68b3318a/" target="_blank">Sebastien</a> <img src="img/linkedin-logo.webp" alt="Linkedin" class="logo-in">, <a href="https://www.linkedin.com/in/ludovic-denis-698b97196/" target="_blank">Ludovic</a> <img src="img/linkedin-logo.webp" alt="Linkedin" class="logo-in"> <br>
-</footer>
-</body>
+            <div class="container">
+                <table class="tableau">
+                  <thead>
+                      <tr class="tableautitre">
+                        <th>Group Name</th>
+                        <th>Date</th>
+                        <th>Places</th>
+                        <th>Price of a place</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td>Isulia Festival</td>
+                            <td>8 november</td> 
+                            <td>Arkéa Arena, 48-50 Avenue Jean Alfonséa, 33270 Floirac</td>
+                            <td>23€/person</td> 
+                          </tr>
+                          <tr>
+                            <td>SCH</td>
+                            <td>18 november</td>
+                            <td>Arkéa Arena, 48-50 Avenue Jean Alfonséa, 33270 Floirac</td>
+                            <td>32€/person</td> 
+                          </tr>
+                          <tr>
+                            <td>Shaka Ponk</td>
+                            <td>20 november</td>
+                            <td>Arkéa Arena, 48-50 Avenue Jean Alfonséa, 33270 Floirac</td>
+                            <td>18€/person</td>  
+                          </tr>
+                          <tr>
+                            <td>The Rabeats</td>
+                            <td>23 november</td>
+                            <td>Arkéa Arena, 48-50 Avenue Jean Alfonséa, 33270 Floirac</td>
+                            <td>27€/person</td> 
+                          </tr>
+                      </tbody>
+                  </table> 
+              <div class="bloc">
+              <article>
+                  <img src="img/concertville.jpg" alt="Concerts dans la ville" class="grid-item">
+                  <div class="soustitre">
+                  <h2>Concert in the city</h2>
+                  </div>
+                <ul>
+                    <li>Hymne à la joie</li>
+                    <li>The concert will be broadcast live in more than 10 locations in Bordeaux, in 70 locations in the Nouvelle-Aquitaine region and live from <br>
+                        Los Angeles and Munich on the occasion of the anniversary of their twinning with the city of Bordeaux.</li>
+                </ul>
+                <div class="audio">
+                <audio controls src="sons/royalty-free-splint-hard-808-rap-beat-quotflutequot-223009.mp3"></audio>
+                </div>
+              </article>
+            </div>
+            <div class="bloc">
+              <article>
+                <img src="img/operabx.jpg" alt="Opéra" class="grid-item">
+                <div class="soustitre">
+                <h2>The Bordeaux National Opera offers shows:</h2>
+                </div>
+                <ul>
+                    <li>"Il Cappello di paglia di Firenze" - This comic opera by Nino Rota, famous for his film scores, will be performed from November 7 to 9.</li>
+                    <li>"Così fan tutte" - One of Mozart's famous operas will be staged from November 19 to 26.</li>
+                    <li>Concerts de l'Orchestre National Bordeaux Aquitaine - Several concerts are also scheduled throughout the month, with symphonic works and classical music.</li>
+                    <li>Spectacles de ballet et récitals - Other events include dance performances and recitals by guest musicians.</li>
+                </ul>
+                <div class="audio">
+                <audio controls src="sons/urbains-aria-les-hugeunot-meyerbeer-anneliese-von-koenig-mezzo-126612.mp3"></audio>
+                </div>
+              </article>
+               </div>
+               </div>
+               <div class="titre2 responsivetxt" >
+                <h2>For more details and to reserve your tickets, you can consult event sites such as the<span>l'Arkéa Arena</span> or the official <span>Bordeaux Tourisme.</span></h2>        
+                </div>
+              </main>
+      <footer>
+        <div class="container">
+          <p>Sources :</p>
+          <ul class="sources">
+            <li><a href="https://chatgpt.com">ChatGPT.com</a></li>
+            <li><a href="https://www.bordeaux.fr">Ville de Bordeaux</a></li>
+            <li><a href="https://pixabay.com">Pixabay.com</a></li>
+          </ul>
+      </div>
+          <p>Promotion BACHELOR TP RECONVERSION 2024 - 2025 :</p>
+          <ul class="promo">
+
+          <li><a href="https://www.linkedin.com/in/jennabenufferamia/">Jenna</a><a href="https://www.linkedin.com/in/jennabenufferamia/" target="_blank">
+            <img src="img/logo-linkedin.png" alt="Profil LinkedIn de Jenna" class="logo-large"> </a></li>
+          <li><a href="https://www.linkedin.com/in/alexandre-fourquin-5ba470187/">Alexandre</a><a href="https://www.linkedin.com/in/jennabenufferamia/" target="_blank">
+            <img src="img/logo-linkedin.png" alt="Profil LinkedIn de alexandre" class="logo-large"> </a></li>
+          <li><a href="https://www.linkedin.com/in/moussa-kebe-b36ba9226/">Moussa</a><a href="https://www.linkedin.com/in/moussa-kebe-b36ba9226/" target="_blank">
+            <img src="img/logo-linkedin.png" alt="Profil LinkedIn de Moussa" class="logo-large"> </a></li>
+          <li><a href="https://www.linkedin.com/in/sébastien-drillaud-b68b3318a/">Sébastien</a><a href="https://www.linkedin.com/in/sébastien-drillaud-b68b3318a/" target="_blank">
+            <img src="img/logo-linkedin.png" alt="Profil LinkedIn de Sebastien" class="logo-large"></a></li>
+          <li><a href="https://www.linkedin.com/in/ludovic-denis-698b97196/">Ludovic</a><a href="https://www.linkedin.com/in/ludovic-denis-698b97196/" target="_blank">
+            <img src="img/logo-linkedin.png" alt="Profil LinkedIn de Ludovic" class="logo-large"></a></li>
+          </ul>
+
+          <a href="https://codingfactory.fr/" target="_blank">
+          <img src="img/logo-coding.png" alt="Logo de la Coding Factory" class="logo-footer"> </a>
+
+          <p>&copy; 2024 - All rights reserved</p>
+      </footer> 
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
