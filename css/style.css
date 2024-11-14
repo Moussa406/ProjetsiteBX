@@ -27,7 +27,7 @@ header .navigation{
     position: fixed;
     width: 100%;
     z-index: 99;
-    
+    max-width: 100vw;
 }
 
 header nav{
@@ -37,7 +37,6 @@ header nav{
     height: 70px;
     line-height: 70px;
     padding: 0 10%;
-    
 }
 
 header nav .logo{
@@ -159,9 +158,8 @@ header .titre{
     }
 
     header nav .divTitre{
-        display: grid !important;
+        /* display: grid !important; */
      }
-
 
     header nav .nav-list{
         display: grid;
@@ -183,6 +181,9 @@ header .titre{
         display: grid !important;
     }
 
+    header h1{
+      font-size: 20px;
+    }
     
 }
 
@@ -277,6 +278,7 @@ header .titre div{
   display: flex;
   position: relative;
   text-align: center;
+  display: flex;
 }
 
 header .titre div::after{
@@ -304,7 +306,7 @@ header .titre div::before{
 }
 
 header h1{
-  margin: 0;
+  margin: auto;
   text-align: center;
   width: 100%;
 }
@@ -717,7 +719,11 @@ header h1{
   width: 100%;
   height: 200px;
   object-fit: cover;
+<<<<<<< HEAD
   border-radius: 20%;#info;
+=======
+  border-radius: 20%;
+>>>>>>> 27196176f8d00092d75b96acc0dcf4a140a8da67
 }
 
 #info h2 {
@@ -1326,4 +1332,5 @@ button {
 
 header, footer { 
   display :none;
+}
 }
