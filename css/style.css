@@ -874,8 +874,15 @@ width: 600px; /* Largeur de la bulle */
 @media(max-width:690px) {
   .contenu-liste-cinema a{
    font-size: 15px;
-  
   }
+}
+.detail-film {
+  list-style-type: none; /* Retirer les puces */
+  padding: 0; /* Enlever l'indentation par défaut (facultatif) */
+}
+.detail-film li {
+  
+  font-weight: normal
 }
 /* --------- PAGE CONCERT -------------------- */
 /* Mise en page du tableau sur la page concert */
