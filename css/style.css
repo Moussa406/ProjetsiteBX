@@ -611,8 +611,6 @@ header h1{
   margin-top: 20px;
   border-radius: 20px;
   font-size: 30px;
-  padding-top: auto;
-  padding-bottom: auto;
 }
 
 #welcome .intro{
@@ -719,11 +717,7 @@ header h1{
   width: 100%;
   height: 200px;
   object-fit: cover;
-<<<<<<< HEAD
-  border-radius: 20%;#info;
-=======
   border-radius: 20%;
->>>>>>> 27196176f8d00092d75b96acc0dcf4a140a8da67
 }
 
 #info h2 {
@@ -1051,13 +1045,13 @@ list-style-type : none;
 
 @media (min-width: 1200px) {
  #concert .container {
-      grid-template-columns: repeat 2fr 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
  #concert .container {
-      grid-template-columns: repeat 1fr 1fr;
+      grid-template-columns: repeat(1, 1fr);
   }
 }
 
